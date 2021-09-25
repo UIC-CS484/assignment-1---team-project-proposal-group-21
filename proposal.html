@@ -3,49 +3,92 @@
 
 <head>
     <title> Assignment 1 </title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- External CSS stylesheet-->
     <link rel="stylesheet" href="./index.css">
 </head>
 
-<body>
+<body id="bodytext">
     <!-- container div-->
     <div id="container">
 
         <header>
             <!--Header -->
-            <h2 align="center">Chicago Info</h2>
+            <h2>Chicago Public Safety Info</h2>
         </header>
 
         <section class="middleboxes">
             <!-- First section -->
             <p> I'm planning to use the City of Chicago Data Portal. Manily working with the Crime database.<br> The data that comes from this portal/API will provide the following to users: </p>
-            <li> What kind of Crime happend at specfic location?</li>
-            <li>Crime history of certain location</li>
-            <li>Uptodate crime stats from the Chicago Police Department</li>
-            <li>It also provided informatin about a case by case number and/or if an arrest was made in specfic reported crime</li>
-            <li>It provides end users insight into Chcago's public safety record in the last 20 years</li>
-
+            <ul>
+                <li> What kind of Crime happend at specfic location?</li>
+                <li>Crime history of certain location</li>
+                <li>Uptodate crime stats from the Chicago Police Department</li>
+                <li>It also provided informatin about a case by case number and/or if an arrest was made in specfic reported crime</li>
+                <li>It provides end users insight into Chcago's public safety record in the last 20 years</li>
+            </ul>
             <p> Below are some of the information that this site will collect from end users</p>
-            <li>Username</li>
-            <li>Password</li>
-            <li>Email address</li>
-            <li>Name <i>First name and last name</i></li>
-            <li>Address <i>such as Zip Code, longitude and Latitude</i></li>
+            <ul>
+                <li>Username</li>
+                <li>Password</li>
+                <li>Email address</li>
+                <li>Name <i>First name and last name</i></li>
+                <li>Address <i>such as Zip Code, longitude and Latitude</i></li>
+            </ul>
         </section>
 
         <section class="middleboxes drop">
             <!-- Second section-->
             <p> Potential usersfor this site would be residents of Chicago and/or potential residents of Chicago who are looking for a neigborhood to move into. In addition this app can also serves as a neigborhood watch, by alearting end users when a crime
                 is reported to the police in the location of their choosing.This app can also serve as an information repo to end users where potential end users find information and statistics of public safety in Chicago. </p>
+
+            <h3>Goals of this site</h3>
+            <ul>
+                <li>Provide user friendly site that provides useful/insightful information to users</li>
+                <li></li>
+            </ul>
+            <p>Why did your team select this topic? <br></p>
+            <p> The Chicago Data Portal provides insightful data through this portal from how the city goverment functions, and/or deeper look at its revene and expidture. One of this dataset provided is the public safety dataset from Chicago Police Department.<br>                Having this information avilable user friendly site helps create a well informed citizen and society</p>
+
         </section>
 
         <footer>
             <!-- This is the footer-->
-            <div class="footer_box"></div>
-            <div class="footer_box"></div>
-            <div class="footer_box"></div>
+            <div class="footer_box">
+                <h3>Resources: </h3>
+                <ul>
+                    <li>The Chicago Data Portal - <a href="https://data.cityofchicago.org/"> Located here</a> </li>
+                    <li>Googles charing liberies <a href="developers.google.com/chart/"> Located here</a> </li>
+                    <li>W3Schools for various html and css related questions <a href="w3schools.com">found here</a> </li>
+                </ul>
+            </div>
+
+
+            <div class="footer_box">
+                <ul>
+                    <li>What kind of information should the site to collect from end users?</li>
+                    <li>Should we take into the account that the information we collect should not be personaly identifiable as a security measure?</li>
+                </ul>
+
+            </div>
+            <div class="footer_box">
+
+                <button id="text_small" type="button">Click me to set the text font size to 8px</button>
+                <button id="text_larger" type="button">Click me to set font size 24px</button>
+
+            </div>
         </footer>
+
+
+        <!-- JavaScript to handle the click events to change font size-->
+        <script>
+            document.getElementById('text_small').addEventListener('click', () => {
+                document.getElementById('bodytext').style.fontSize = '8px';
+            })
+            document.getElementById('text_larger').addEventListener('click', () => {
+                document.getElementById('bodytext').style.fontSize = '24px';
+            })
+        </script>
 
 
     </div>
