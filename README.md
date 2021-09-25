@@ -1,4 +1,4 @@
-Github pages site link: https://uic-cs484.github.io/assignment-1---team-project-proposal-group-21/proposal.html
+GitHub Pages site: https://uic-cs484.github.io/assignment-1---team-project-proposal-group-21/proposal.html
 
 Topic: Chicago pubc safety info 
 
